@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-12" [class.table-responsive]="isResponsive" [class.mb-3]="isResponsive">
+    <table class="table w-100"
+      [ngClass]="{'table-bordered': tabelaComBorda, 'table-sm': tabelaSm, 'table-striped': tabelaStriped,'table-hover': tabelaHover}">
+      <ng-content></ng-content>
+    </table>
+  </div>
+  <div class="col-md-2">
+    <select class="custom-select" [(ngModel)]="itensPorPagina" (change)="alterarPagina($event)">
+      <option [ngValue]="10">10</option>
+      <option [ngValue]="25">25</option>
+      <option [ngValue]="50">50</option>
+      <option [ngValue]="100">100</option>
+    </select>
+  </div>
+  <div class="col-md-10">
+    <pagination class="float-right" [align]="true" [totalItems]="totalItems" previousText="&lsaquo;"
+      [rotate]="centralizar" [maxSize]="tamanhoMaximo" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"
+      [itemsPerPage]="itensPorPagina" (pageChanged)="alterarPagina($event)">
+    </pagination>
+  </div>
+</div>

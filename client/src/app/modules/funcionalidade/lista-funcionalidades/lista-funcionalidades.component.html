@@ -1,0 +1,48 @@
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-md-6">
+        Lista Funcionalidades
+      </div>
+      <div class="col-md-6 text-right">
+        <button class="btn btn-primary" [routerLink]='["cadastrar-funcionalidade"]'><i class="fa fa-plus"></i> Cadastrar Funcionalidade</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12">
+        <app-table [totalItems]="listaPaginadaFuncionalidade.itensTotal" [isResponsive]="true" [tabelaSm]="true"
+          [tabelaStriped]="true" [tabelaComBorda]="true" (alterouPagina)="alterarPagina($event)">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th class="text-right">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let funcionalidade of listaPaginadaFuncionalidade.itens">
+              <td class="align-middle">{{funcionalidade.nome}}</td>
+              <td class="text-right align-middle">
+                <button type="button" class="btn btn-sm btn-primary mr-1" [routerLink]="['editar-funcionalidade', funcionalidade.id]"
+                  tooltip="Editar Funcionalidade">
+                  <span class="fa fa-edit"></span>
+                </button>
+                <app-modal-excluir-item [itemExcluir]="funcionalidade" (confirmarExclusao)="confirmadaExclusao($event)"
+                  tooltip="Excluir Funcionalidade">
+                </app-modal-excluir-item>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listaPaginadaFuncionalidade.itens && listaPaginadaFuncionalidade.itens.length === 0">
+            <tr>
+              <td colspan="2" class="text-center">
+                Nenhum item encontrado
+              </td>
+            </tr>
+          </tbody>
+        </app-table>
+      </div>
+    </div>
+  </div>
+</div>

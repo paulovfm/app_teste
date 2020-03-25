@@ -1,0 +1,58 @@
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-md-6">
+        Editar Usuário
+      </div>
+      <div class="col-md-6 text-right">
+        <button type="button" class="btn btn-white mr-2" [routerLink]="['/usuarios']"><span class="fa fa-times"></span>
+          Cancelar
+        </button>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" [disabled]="formEditarUsuario.invalid"
+            data-toggle="dropdown">
+            <span class="fa fa-save"></span> Salvar Usuário
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" type="button" (click)="salvarUsuario(0)">Salvar</button>
+            <button class="dropdown-item" type="button" (click)="salvarUsuario(1)">Salvar e Criar Novo</button>
+            <button class="dropdown-item" type="button" (click)="salvarUsuario(2)">Salvar e Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body" [formGroup]="formEditarUsuario">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <app-input label="Nome" errorMessage="O nome é obrigatório">
+              <input type="text" class="form-control" formControlName="nome" placeholder="Digite o nome do usuário">
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </app-input>
+          </div>
+          <div class="col-md-6 mb-3">
+            <app-input label="E-mail" errorMessage="O email é obrigatório">
+              <input type="text" class="form-control" formControlName="email" placeholder="Digite o e-mail do usuário">
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </app-input>
+          </div>
+          <div class="col-md-6 mb-3">
+            <app-input label="Senha" errorMessage="O senha é obrigatório">
+              <input type="password" class="form-control" formControlName="senha" placeholder="Digite o nome do usuário">
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </app-input>
+          </div>
+          <div class="col-md-6">
+            <label>Perfil</label>
+            <ng-select [items]="listaPerfil" [searchable]="true" [clearable]="false" style="flex: 1 1 auto;"
+              notFoundText="Nenhum item encontrado" bindLabel="nome" bindValue="id" [multiple]="false" formControlName="perfilId">
+            </ng-select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-md-6">
+        Cadastrar Funcionalidade
+      </div>
+      <div class="col-md-6 text-right">
+        <button type="button" class="btn btn-white mr-2" [routerLink]="['/funcionalidades']"><span class="fa fa-times"></span>
+          Cancelar
+        </button>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" [disabled]="formCadastrarFuncionalidade.invalid"
+            data-toggle="dropdown">
+            <span class="fa fa-save"></span> Salvar Funcionalidade
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" type="button" (click)="salvarFuncionalidade(0)">Salvar</button>
+            <button class="dropdown-item" type="button" (click)="salvarFuncionalidade(1)">Salvar e Criar Novo</button>
+            <button class="dropdown-item" type="button" (click)="salvarFuncionalidade(2)">Salvar e Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body" [formGroup]="formCadastrarFuncionalidade">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <app-input label="Nome" errorMessage="O nome é obrigatório">
+              <input type="text" class="form-control" formControlName="nome" placeholder="Digite o nome do funcionalidade">
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </app-input>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-md-6">
+        Lista Usuários
+      </div>
+      <div class="col-md-6 text-right">
+        <button class="btn btn-primary" [routerLink]='["cadastrar-usuario"]'><i class="fa fa-plus"></i> Cadastrar Usuário</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12">
+        <app-table [totalItems]="listaPaginadaUsuario.itensTotal" [isResponsive]="true" [tabelaSm]="true"
+          [tabelaStriped]="true" [tabelaComBorda]="true" (alterouPagina)="alterarPagina($event)">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Perfil</th>
+              <th class="text-right">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let usuario of listaPaginadaUsuario.itens">
+              <td class="align-middle">{{usuario.nome}}</td>
+              <td class="align-middle">{{usuario.email}}</td>
+              <td class="align-middle">{{usuario.perfil.nome}}</td>
+              <td class="text-right align-middle">
+                <button type="button" class="btn btn-sm btn-primary mr-1" [routerLink]="['editar-usuario', usuario.id]"
+                  tooltip="Editar Usuário">
+                  <span class="fa fa-edit"></span>
+                </button>
+                <app-modal-excluir-item [itemExcluir]="usuario" (confirmarExclusao)="confirmadaExclusao($event)"
+                  tooltip="Excluir Usuário">
+                </app-modal-excluir-item>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listaPaginadaUsuario.itens && listaPaginadaUsuario.itens.length === 0">
+            <tr>
+              <td colspan="4" class="text-center">
+                Nenhum item encontrado
+              </td>
+            </tr>
+          </tbody>
+        </app-table>
+      </div>
+    </div>
+  </div>
+</div>

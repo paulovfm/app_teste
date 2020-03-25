@@ -1,0 +1,48 @@
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-md-6">
+        Lista Perfis
+      </div>
+      <div class="col-md-6 text-right">
+        <button class="btn btn-primary" [routerLink]='["cadastrar-perfil"]'><i class="fa fa-plus"></i> Cadastrar Perfil</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12">
+        <app-table [totalItems]="listaPaginadaPerfil.itensTotal" [isResponsive]="true" [tabelaSm]="true"
+          [tabelaStriped]="true" [tabelaComBorda]="true" (alterouPagina)="alterarPagina($event)">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th class="text-right">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let perfil of listaPaginadaPerfil.itens">
+              <td class="align-middle">{{perfil.nome}}</td>
+              <td class="text-right align-middle">
+                <button type="button" class="btn btn-sm btn-primary mr-1" [routerLink]="['editar-perfil', perfil.id]"
+                  tooltip="Editar Perfil">
+                  <span class="fa fa-edit"></span>
+                </button>
+                <app-modal-excluir-item [itemExcluir]="perfil" (confirmarExclusao)="confirmadaExclusao($event)"
+                  tooltip="Excluir Perfil">
+                </app-modal-excluir-item>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listaPaginadaPerfil.itens && listaPaginadaPerfil.itens.length === 0">
+            <tr>
+              <td colspan="2" class="text-center">
+                Nenhum item encontrado
+              </td>
+            </tr>
+          </tbody>
+        </app-table>
+      </div>
+    </div>
+  </div>
+</div>

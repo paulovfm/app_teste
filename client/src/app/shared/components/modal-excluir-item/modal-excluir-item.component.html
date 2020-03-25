@@ -1,0 +1,31 @@
+<button type="button" class="btn btn-sm btn-danger" (click)="staticModal.show()" title="Excluir"><span
+    class="fa fa-trash"></span></button>
+
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title pull-left">
+          <div>Excluir:
+            <span class="text-danger">{{itemExcluir.nome}}</span>
+          </div>
+        </h5>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-left">
+        <div>Realmente deseja excluir:
+          <span class="text-danger">{{itemExcluir.nome}}</span>
+          <span>?</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-white" (click)="staticModal.hide()"><span class="fa fa-times"></span>
+          Cancelar</button>
+        <button type="button" class="btn btn-danger" (click)="excluir(itemExcluir)"><span class="fa fa-trash"></span>
+          Excluir</button>
+      </div>
+    </div>
+  </div>
+</div>

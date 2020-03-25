@@ -1,0 +1,8 @@
+<div class="form-group has-feedback" [class.has-success]="hasSuccess()" [class.has-error]="hasError()">
+  <label class="for-label"
+    [ngClass]="{'help-block text-success': showTip && hasSuccess() && errorMessage, 'help-block text-danger': showTip &&hasError() && errorMessage}">
+    {{label}} <span *ngIf="showTip && errorMessage">(*)</span>
+  </label>
+  <ng-content></ng-content>
+  <span class="help-block text-danger" *ngIf="showTip &&hasError()"> {{errorMessage}}</span>
+</div>
