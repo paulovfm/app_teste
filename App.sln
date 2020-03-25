@@ -19,25 +19,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - App.Infra.Data", "3.1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Infra.Data", "server\App.Infra.Data\App.Infra.Data.csproj", "{AD7B2116-820A-4A37-885C-5EA7CB3E0961}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "web", "..\..\..\PROJETOS_HEALTHGO\Clinica\client\web\", "{06A4331D-1D48-4D05-9B81-EF3CB70E6D7F}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "client", "client\", "{216BAD99-7A9F-4BE5-9C4A-17116A4E175A}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_61574"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\PROJETOS_HEALTHGO\Clinica\client\web\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61574\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51202"
+		Debug.AspNetCompiler.PhysicalPath = "client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51202\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_61574"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\PROJETOS_HEALTHGO\Clinica\client\web\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61574\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51202"
+		Release.AspNetCompiler.PhysicalPath = "client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51202\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "61574"
-		SlnRelativePath = "..\..\..\PROJETOS_HEALTHGO\Clinica\client\web\"
+		VWDPort = "51202"
+		SlnRelativePath = "client\"
 	EndProjectSection
 EndProject
 Global
@@ -58,10 +58,10 @@ Global
 		{AD7B2116-820A-4A37-885C-5EA7CB3E0961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD7B2116-820A-4A37-885C-5EA7CB3E0961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD7B2116-820A-4A37-885C-5EA7CB3E0961}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06A4331D-1D48-4D05-9B81-EF3CB70E6D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06A4331D-1D48-4D05-9B81-EF3CB70E6D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06A4331D-1D48-4D05-9B81-EF3CB70E6D7F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{06A4331D-1D48-4D05-9B81-EF3CB70E6D7F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{216BAD99-7A9F-4BE5-9C4A-17116A4E175A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216BAD99-7A9F-4BE5-9C4A-17116A4E175A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216BAD99-7A9F-4BE5-9C4A-17116A4E175A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{216BAD99-7A9F-4BE5-9C4A-17116A4E175A}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,7 +71,7 @@ Global
 		{0B9319A2-7A30-40AC-8AFE-B258C5553620} = {FC8FC9BF-2BA5-473F-AECA-CEA307C1E237}
 		{F9473858-68C2-4375-BD8E-8CF935B26DF4} = {466D504F-D8E2-4214-B6F7-7FA8D24144E0}
 		{AD7B2116-820A-4A37-885C-5EA7CB3E0961} = {F9473858-68C2-4375-BD8E-8CF935B26DF4}
-		{06A4331D-1D48-4D05-9B81-EF3CB70E6D7F} = {B69AA539-481B-45E6-BBC3-E5676C88DF72}
+		{216BAD99-7A9F-4BE5-9C4A-17116A4E175A} = {B69AA539-481B-45E6-BBC3-E5676C88DF72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F9B7564-ADF0-4694-84EC-23A519E45CFD}

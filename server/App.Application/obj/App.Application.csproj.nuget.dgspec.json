@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Application\\App.Application.csproj": {}
+    "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Application\\App.Application.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Application\\App.Application.csproj": {
+    "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Application\\App.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Application\\App.Application.csproj",
+        "projectUniqueName": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Application\\App.Application.csproj",
         "projectName": "App.Application",
-        "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Application\\App.Application.csproj",
+        "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Application\\App.Application.csproj",
         "packagesPath": "C:\\Users\\p_v_f\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Application\\obj\\",
+        "outputPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj"
+              "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj"
               },
-              "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Infra.Data\\App.Infra.Data.csproj": {
-                "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Infra.Data\\App.Infra.Data.csproj"
+              "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Infra.Data\\App.Infra.Data.csproj": {
+                "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Infra.Data\\App.Infra.Data.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj": {
+    "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj",
         "projectName": "App.Domain",
-        "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj",
+        "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj",
         "packagesPath": "C:\\Users\\p_v_f\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Infra.Data\\App.Infra.Data.csproj": {
+    "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Infra.Data\\App.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Infra.Data\\App.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Infra.Data\\App.Infra.Data.csproj",
         "projectName": "App.Infra.Data",
-        "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Infra.Data\\App.Infra.Data.csproj",
+        "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Infra.Data\\App.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\p_v_f\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Infra.Data\\obj\\",
+        "outputPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -176,8 +176,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj"
+              "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj"
               }
             }
           }

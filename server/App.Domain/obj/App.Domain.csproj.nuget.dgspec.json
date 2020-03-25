@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj": {}
+    "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj": {
+    "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj",
         "projectName": "App.Domain",
-        "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\App.Domain.csproj",
+        "projectPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\App.Domain.csproj",
         "packagesPath": "C:\\Users\\p_v_f\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app\\App\\server\\App.Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\PROJETOS_PESSOAIS\\app_teste\\server\\App.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
